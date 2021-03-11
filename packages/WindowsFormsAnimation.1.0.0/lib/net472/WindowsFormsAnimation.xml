@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WindowsFormsAnimation</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsFormsAnimation.Classes.Config">
+            <summary>
+            CONFIGURAÇÕES DA ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Classes.Config.Finish">
+            <summary>
+            VALOR INTEIRO FINAL DA ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Classes.Config.Delay">
+            <summary>
+            VALOR INTEIRO DE DELAY PARA A ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Classes.Config.Value">
+            <summary>
+            VALOR QUE SERÁ ACRECENTADO OU REDUZIDO DO COMPONENTE NO PERÍDO DE DELAY
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Classes.Config.Width">
+            <summary>
+            WIDTH ATUAL DO COMPONENTE
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Classes.Config.#ctor">
+            <summary>
+            CONSTRUTOR
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Classes.Config.NewWidth(System.Int32)">
+            <summary>
+            ATUALIZA O VALOR DO WIDTH 
+            </summary>
+            <param name="pNewValue">NOVO WIDTH</param>
+        </member>
+        <member name="T:WindowsFormsAnimation.Classes.EventStateArgs">
+            <summary>
+            EVENTO DE RETORNO
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Classes.EventStateArgs.AnimationState">
+            <summary>
+            STATUS DA ANIMAÇÃO NO ENVIO DO EVENTO
+            </summary>
+        </member>
+        <member name="T:WindowsFormsAnimation.Controls.WFAPanel">
+            <summary>
+            INICIAR COMO OBJETO PANEL DO WINDOWS FORMS
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Controls.WFAPanel.AnimationAtualState">
+            <summary>
+            STATUS ATUAL DO COMPONENTE 
+            </summary>
+        </member>
+        <member name="E:WindowsFormsAnimation.Controls.WFAPanel.AnimationStateResponse">
+            <summary>
+            EVENTO EXECUTADO AO FINAL DA ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="E:WindowsFormsAnimation.Controls.WFAPanel.InAnimation">
+            <summary>
+            EVENTO EXECUTADO DURANTE A ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Controls.WFAPanel.#ctor">
+            <summary>
+            CONSTRUTOR
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Controls.WFAPanel.Hide(WindowsFormsAnimation.Classes.Config,Animation)">
+            <summary>
+            ENVIA O COMANDO PARA O COMPONENTE ESCONDER
+            </summary>
+            <param name="pConfig">CONFIGURAÇÕES</param>
+            <param name="pAnimation">TIPO DE ANIMAÇÃO</param>
+        </member>
+        <member name="M:WindowsFormsAnimation.Controls.WFAPanel.Show(WindowsFormsAnimation.Classes.Config,Animation)">
+            <summary>
+            ENVIA O COMANDO PARA O COMPONENTE ABRIR
+            </summary>
+            <param name="pConfig">CONFIGURAÇÕES</param>
+            <param name="pAnimation">TIPO DE ANIMAÇÃO</param>
+        </member>
+        <member name="T:WindowsFormsAnimation.Independents.WFAPanel">
+            <summary>
+            INICIAR PARA USO NO PANEL DO WINDOWS FORMS
+            </summary>
+        </member>
+        <member name="P:WindowsFormsAnimation.Independents.WFAPanel.AnimationAtualState">
+            <summary>
+            STATUS ATUAL DO COMPONENTE 
+            </summary>
+        </member>
+        <member name="E:WindowsFormsAnimation.Independents.WFAPanel.AnimationStateResponse">
+            <summary>
+            EVENTO EXECUTADO AO FINAL DA ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="E:WindowsFormsAnimation.Independents.WFAPanel.InAnimation">
+            <summary>
+            EVENTO EXECUTADO DURANTE A ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Independents.WFAPanel.#ctor">
+            <summary>
+            CONSTRUTOR
+            </summary>
+        </member>
+        <member name="M:WindowsFormsAnimation.Independents.WFAPanel.Hide(WindowsFormsAnimation.Classes.Config,Animation,System.Windows.Forms.Panel)">
+            <summary>
+            ENVIA O COMANDO PARA O COMPONENTE ESCONDER
+            </summary>
+            <param name="pConfig">CONFIGURAÇÕES</param>
+            <param name="pAnimation">TIPO DE ANIMAÇÃO</param>
+        </member>
+        <member name="M:WindowsFormsAnimation.Independents.WFAPanel.Show(WindowsFormsAnimation.Classes.Config,Animation,System.Windows.Forms.Panel)">
+            <summary>
+            ENVIA O COMANDO PARA O COMPONENTE ABRIR
+            </summary>
+            <param name="pConfig">CONFIGURAÇÕES</param>
+            <param name="pAnimation">TIPO DE ANIMAÇÃO</param>
+        </member>
+        <member name="T:Animation">
+            <summary>
+            TIPO DE ANIMAÇÃO
+            </summary>
+        </member>
+        <member name="F:Animation.SLIDE">
+            <summary>
+            ANIMAÇÃO LEFT - RIGHT
+            </summary>
+        </member>
+        <member name="T:AnimationState">
+            <summary>
+            STATUS DA ANIMAÇÃO DO COMPONENTE
+            </summary>
+        </member>
+        <member name="F:AnimationState.SHOW">
+            <summary>
+            COMPONENTE EM SHOW
+            </summary>
+        </member>
+        <member name="F:AnimationState.HIDE">
+            <summary>
+            COMPOMENTE EM HIDE
+            </summary>
+        </member>
+    </members>
+</doc>
